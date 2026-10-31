@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alertas Tempranas - USM</title>
+    
+    <!-- Cargamos los estilos de Leaflet para el mapa -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Conectamos nuestro propio archivo de estilos (que crearemos después) -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Plataforma de Riesgos Urbanos - Casa Central USM</h1>
+        <p>Reporta y visualiza obstáculos o incidentes en los alrededores de la universidad.</p>
+    </header>
+
+    <main>
+        <!-- Este es el contenedor donde aparecerá el mapa interactivo -->
+        <div id="mapa-usm"></div>
+    </main>
+
+    <!-- Cargamos la lógica de Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Conectamos nuestro propio archivo JavaScript (que crearemos después) -->
+    <script src="{{ url_for('static', filename='js/mapa.js') }}"></script>
+
+</body>
+</html>

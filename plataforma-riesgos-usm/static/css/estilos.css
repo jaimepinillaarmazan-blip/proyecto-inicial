@@ -1,0 +1,52 @@
+/* Reset básico para que se vea igual en todos los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 25px;
+    max-width: 800px;
+}
+
+header h1 {
+    color: #004d99; /* Un azul formal para la plataforma */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* 
+  ESTA ES LA PARTE MÁS IMPORTANTE
+  Leaflet requiere dimensiones exactas para renderizar el mapa
+*/
+#mapa-usm {
+    height: 70vh; /* Ocupa el 70% del alto de la pantalla */
+    min-height: 400px;
+    width: 100%;
+    max-width: 1000px; /* Limita el ancho en pantallas de computador */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra para darle profundidad */
+    border: 2px solid #e0e0e0;
+
+}
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
