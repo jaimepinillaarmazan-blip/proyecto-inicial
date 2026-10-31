@@ -45,8 +45,31 @@ header p {
     border: 2px solid #e0e0e0;
 
 }
+/* Reemplaza tu regla "main" anterior por esta: */
 main {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Apila el mapa arriba y el botón abajo */
+    align-items: center;
+    gap: 20px; /* Añade una separación limpia entre el mapa y el botón */
+}
+
+/* Agrega esto al final del archivo: */
+#btn-reportar {
+    background-color: #004d99; /* El mismo azul formal del título */
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease, transform 0.1s;
+}
+
+/* Efecto al pasar el cursor (Hover) */
+#btn-reportar:hover {
+    background-color: #003366; /* Un azul levemente más oscuro */
+    transform: translateY(-2px); /* Pequeño salto visual */
 }

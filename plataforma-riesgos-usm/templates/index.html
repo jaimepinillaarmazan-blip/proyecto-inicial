@@ -8,7 +8,7 @@
     <!-- Cargamos los estilos de Leaflet para el mapa -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     
-    <!-- Conectamos nuestro propio archivo de estilos (que crearemos después) -->
+    <!-- Conectamos nuestro propio archivo de estilos -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
 </head>
 <body>
@@ -21,12 +21,15 @@
     <main>
         <!-- Este es el contenedor donde aparecerá el mapa interactivo -->
         <div id="mapa-usm"></div>
+        
+        <!-- Nuevo botón para reportar alertas -->
+        <button id="btn-reportar">Reportar Nuevo Incidente</button>
     </main>
 
     <!-- Cargamos la lógica de Leaflet -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     
-    <!-- Conectamos nuestro propio archivo JavaScript (que crearemos después) -->
+    <!-- Conectamos nuestro propio archivo JavaScript -->
     <script src="{{ url_for('static', filename='js/mapa.js') }}"></script>
 
 </body>
