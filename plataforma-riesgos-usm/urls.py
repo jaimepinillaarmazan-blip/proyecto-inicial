@@ -17,7 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.urls import path
+from .views import guardar_reporte
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('plataforma-riesgos-usm.urls')),
+    path('api/guardar-reporte/', guardar_reporte, name='guardar_reporte'),
 ]
